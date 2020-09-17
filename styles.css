@@ -1,0 +1,11 @@
+.user-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.backgroung{
+  background-image: url('https://images.unsplash.com/photo-1581149566205-4bb06d6927a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}

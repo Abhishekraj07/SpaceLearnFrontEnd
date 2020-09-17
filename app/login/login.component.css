@@ -1,0 +1,26 @@
+.error{
+  color: #FF0000;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  background-color: blanchedalmond;
+  margin: 2em auto auto;
+}
+
+.display
+{
+  align-content: center;
+}
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 0px; /* Added */
+  width: 500px;
+  opacity: 1;
+
+}
+.opacity{
+  opacity: 0;
+
+}

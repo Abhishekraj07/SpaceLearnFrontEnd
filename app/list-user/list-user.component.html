@@ -1,0 +1,44 @@
+<div class="col-md-6 user-container">
+  <h2 style="margin: auto"> User Details</h2>
+  <div class="row">
+    <div class="col-sm-6">
+      <button class="btn btn-danger" style="width:100px" (click)="addUser()"> Add User</button>
+    </div>
+    <div class="col-sm-6">
+      <button class="btn btn-danger" style="width:100px" (click)="queries()"> Queries</button>
+    </div>
+    <div class="col-sm-6">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="btn btn-danger" style="width:150px" (click)="generatePdf()">Generate Pdf</button>
+    </div>
+  </div>
+  <table class="table table-striped" id="contentToConvert">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>UserName</th>
+      <th>Age</th>
+      <th>Salary</th>
+      <th>Delete</th>
+      <th>Edit</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td class="hidden">{{user.id}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.salary}}</td>
+      <td><button class="btn btn-success" (click)="deleteUser(user)"> Delete</button></td>
+       <td> <button class="btn btn-success" (click)="editUser(user)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

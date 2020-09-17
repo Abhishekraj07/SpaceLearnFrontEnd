@@ -1,0 +1,34 @@
+<div class="col-md-6 user-container">
+    <h2 style="margin: auto"> Space Details</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <button class="btn btn-danger" style="width:100px" (click)="addUser()"> Add Details</button>
+      </div>
+      <div class="col-sm-6">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-danger" style="width:150px" (click)="generatePdf()">Generate Pdf</button>
+      </div>
+    </div>
+    <table class="table table-striped" id="contentToConvert">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>comments</th>
+        <th>topic</th>
+        
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let questions of Queries">
+        <td class="hidden">{{questions.id}}</td>
+        <td>{{questions.comments}}</td>
+        <td>{{questions.topic}}</td>
+        
+       
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
